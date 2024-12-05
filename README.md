@@ -33,5 +33,24 @@ Funcionamiento del método obtener todos con autenticación
 
 ## Config
 
+Funcionamiento del método obtener la configuración del micro-worker
+
+<h1 align="center">
+  <img src="https://github.com/whosstranger/MicroserviciosFinal/blob/main/Imagenes/Obtener%20configuraci%C3%B3n%20de%20Worker.png"/>
+</h1>
+
+
+Funcionamiento del método obtener la configuración del micro-articulo
+
+<h1 align="center">
+  <img src="https://github.com/whosstranger/MicroserviciosFinal/blob/main/Imagenes/Obtener%20configuraci%C3%B3n%20de%20articulo.png"/>
+</h1>
+
 
 ## Eureka
+
+Funcionamiento del dashboard eureka con ambos microservicios
+
+<h1 align="center">
+  <img src="https://github.com/whosstranger/MicroserviciosFinal/blob/main/Imagenes/Registro%20de%20MS%20en%20Eureka.png"/>
+</h1>
