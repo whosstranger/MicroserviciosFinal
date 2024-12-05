@@ -24,34 +24,34 @@ jobs:
           
       # Construccion de jars
       - name: Build Micro Client
-        run: mvn -f MicroserviceWorker/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroservicioWorker/pom.xml clean install -DskipTests=true
       
       - name: Build Micro Item
-        run: mvn -f MicroserviceArticulo/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroservicioArticulo/pom.xml clean install -DskipTests=true
 
       - name: Build Micro Config
-        run: mvn -f MicroserviceConfig/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroservicioConfig/pom.xml clean install -DskipTests=true
 
       - name: Build Micro Eureka
-        run: mvn -f MicroserviceEureka/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroservicioEureka/pom.xml clean install -DskipTests=true
 
 
       # Construccion de imagenes
       - name: Build image Worker
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:worker .
-        working-directory: MicroserviceWorker
+        working-directory: MicroservicioeWorker
         
       - name: Build image config
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:config .
-        working-directory: MicroserviceConfig
+        working-directory: MicroservicioConfig
         
       - name: Build image eureka
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:eureka .
-        working-directory: MicroserviceEureka
+        working-directory: MicroservicioEureka
 
       - name: Build image articulo
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:articulo .
-        working-directory: MicroserviceArticulo
+        working-directory: MicroservicioArticulo
 
 
       #Login docker
